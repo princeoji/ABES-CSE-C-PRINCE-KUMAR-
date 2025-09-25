@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+</head>
+<STYLE>
+    .main{
+        background-color: rgb(185, 162, 207);
+        width: 15rem;
+        height: 20rem;
+        text-align: center;
+        
+    }
+    .child{
+        background-color: rgb(91, 127, 190);
+    }
+</STYLE>
+<body>
+    <div class="main">
+        <div class="child">
+            YOUR NAME <BR><input type="text" id="adi1"><BR>
+        KNOWN LANGUAGE<BR><input type="text" id="adi2"><br>
+            <BR><input type="text" id="adi3"><br>
+                <BR><input type="text" id="adi4"><br>
+                    <button onclick="abes()">Submit</button>    
+                
+        </div>
+        <p id="aed"></p>
+    </div>
+    
+     
+ <script>
+      function abes(){
+        let v1 = document.getElementById("adi1").value;
+        let v2 = document.getElementById("adi2").value;
+        let v3 = document.getElementById("adi3").value;
+        let v4 = document.getElementById("adi4").value;
+        document.getElementById("aed").innerHTML = "Name: " + v1 + "<br>Languages: " + v2 + "<br>" + v3 + "<br>" + v4;
+        
+      }
+    </script>
+
+
+
+</body>
+</html>
